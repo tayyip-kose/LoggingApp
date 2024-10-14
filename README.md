@@ -1,7 +1,9 @@
 LogApp
+
 LogApp is a C++ application developed using the Qt framework. This application is a logging system that creates and manages log files based on the specified configuration settings. LogApp writes log files at specific intervals according to the settings in a JSON file, and manages the maximum file size and the number of log files.
 
 Project Features
+
 LogApp reads configuration settings from the config.json file.
 Log files are created at specified time intervals (e.g., every second, minute, hour, or day).
 Each log file is named with a UTC timestamp.
