@@ -11,6 +11,7 @@ When the maximum number of log files or size is reached, the oldest log file is 
 The directory where log files are written, the logging frequency, and the log file size can be easily configured via the config.json file.
 
 File Structure
+
 main.cpp: The file where the application is initialized and the logger class is created. It also generates log messages at specific intervals.
 logging.cpp: The file where the class responsible for creating log files, managing old logs, and reading the configuration file is implemented.
 logging.h: The header file for the Logging class. It contains the methods for logging operations and managing settings.
