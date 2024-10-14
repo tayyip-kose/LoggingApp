@@ -13,7 +13,7 @@ Logging::Logging() : logDirectory(QCoreApplication::applicationDirPath() + "/log
 void Logging::loadConfig(const QString& configPath) {
     QFile configFile(configPath);
     if (!configFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Config dosyası açılamadı: " << configPath;
+        qWarning() << "Failed to open config file: " << configPath;
         return;
     }
 
@@ -39,17 +39,17 @@ void Logging::createLog() {
     QString logFileName = logDirectory + getCurrentUTCTime() + "." + logType;
     QFile logFile(logFileName);
 
-    qDebug() << "Log dosyası oluşturulmaya çalışılıyor: " << logFileName;
+    qDebug() << "log is being created " << logFileName;
 
     // Log oluşturma
     if (logFile.open(QIODevice::WriteOnly)) {
         QTextStream stream(&logFile);
         stream << "Log created at " << getCurrentUTCTime() << "\n";
         logFile.close();
-        qDebug() << "Log dosyası başarıyla oluşturuldu.";
+        qDebug() << "Log file created successfully.";
     } else {
-        qWarning() << "Log dosyası oluşturulamadı: " << logFileName;
-        qWarning() << "Hata: " << logFile.errorString();
+        qWarning() << "Failed to create log file: " << logFileName;
+        qWarning() << "Error: " << logFile.errorString();
     }
 
     manageLogFiles();
@@ -67,7 +67,7 @@ void Logging::manageLogFiles() {
     while (logFiles.size() > logSize) {
         QString oldestLogFile = logFiles.takeLast();
         dir.remove(oldestLogFile);
-        qDebug() << "Silinen log dosyası: " << oldestLogFile;
+        qDebug() << "Deleted log file: " << oldestLogFile;
     }
 }
 
