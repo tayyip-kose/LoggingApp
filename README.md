@@ -1,0 +1,2 @@
+# LogApp
+ Logging App C++

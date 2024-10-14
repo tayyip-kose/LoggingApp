@@ -1,0 +1,8 @@
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/LogApp.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/edit_cache.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/rebuild_cache.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/list_install_components.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/install.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/install/local.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/install/strip.dir
+C:/Users/tayyipk/Documents/FinalDeneme/LogApp/build/CMakeFiles/LogApp_autogen.dir
